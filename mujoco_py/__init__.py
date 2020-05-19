@@ -22,7 +22,7 @@ GlfwContext = cymj.GlfwContext
 # Public API:
 __all__ = ['MjSim', 'MjSimState',
            'MjRenderContextOffscreen', 'MjRenderContextWindow',
-           'MjRenderContext', 'MjViewerController', 'MjViewer', 'MjViewerBasic',
+           'MjRenderContext', 'MjViewerController', 'MjViewerKeyboard','MjViewer', 'MjViewerBasic',
            'MujocoException', 'MjRenderPool', 'MjBatchRenderer', 'GlfwContext',
            'load_model_from_path', 'load_model_from_xml',
            'load_model_from_mjb',
