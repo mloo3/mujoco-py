@@ -870,16 +870,16 @@ class MjViewerController(MjViewerBasic):
         if present == 1:
             ax, n_ax = glfw.get_joystick_axes(jid)
             # TODO: get better threshold for stick drift
-            if abs(ax[3]) > 0.012: # right stick left/right
-                self.action[1] = ax[3]
+            if abs(ax[0]) > 0.09: # right stick left/right
+                self.action[1] = ax[0]
             else:
                 self.action[0] = 0
-            if abs(ax[4]) > 0.03: # right stick up/down
-                self.action[0] = ax[4]
+            if abs(ax[1]) > 0.09: # right stick up/down
+                self.action[0] = ax[1]
             else:
                 self.action[1] = 0
-            if abs(ax[1]) > 0.09: # left stick up/down
-                self.action[2] = -ax[1]
+            if abs(ax[4]) > 0.09: # left stick up/down
+                self.action[2] = -ax[4]
             else:
                 self.action[2] = 0
             butt, n_butt = glfw.get_joystick_buttons(jid)
